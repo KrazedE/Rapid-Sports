@@ -4,15 +4,36 @@
 body {
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
 .latest {
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid black;
   height: auto;
   color: black;
   text-align: center;
 }
+.intro {
+  text-align: center;
+  border: 5px solid #2ecc71;
+  background-color: #2ecc71;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
 .top-stories {
-  margin
+  background-color: #ecf0f1;
+  border: 2px solid black;
+  margin-left: 5px;
+  float: left;
+  max-width: 50%;
+  margin-bottom: 15px;
+}
+.latest .top-stories img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.right-sidebar {
+  float: right;
 }

@@ -10,19 +10,22 @@ function getApi(){
     // console.log(data);
     data.articles.forEach(function(ele){
       var article = ele;
-      var url = article.urlToImage;
+      var imageUrl = article.urlToImage;
+      var articleUrl = article.url;
       var title = article.title;
-      var image = "<section class='top-stories'>" + "<img src=" + url + ">" + "<h3 class='title'>" + title + "</h3>"  + "</section>" ;
+      var image = "<section class='top-stories'>" + "<a href=' " + articleUrl + "' target='_blank'>"  + "<img src=" + imageUrl + ">" + "<h3 class='title'>" + title + "</h3>"  + "</a>" + "</section>" ;
       $(".latest").append(image);
-
-
-      // console.log(ele);
+      // console.log(article.url);
     })
   });
   $.getJSON(state.url2,function(data){
     // console.log(data);
     data.articles.forEach(function(ele){
-      // console.log(ele);
+      var article2 = ele;
+      var titleUrl = article2.url;
+      var title = article2.title;
+      var side-stories = "<a href=' " + titleUrl + "' target='_blank'>"  + "<h3 class='side-stories-title'>" + title + "</h3>"  + "</a>";
+      $(".right-sidebar").append(side-stories);
     })
   });
 }
