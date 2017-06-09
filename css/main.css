@@ -14,6 +14,9 @@ a :hover {
 a :after {
   color: #2980b9;
 }
+main {
+  background-color: white;
+}
 
 .latest {
   margin-left: auto;
@@ -43,7 +46,17 @@ a :after {
 }
 
 .right-sidebar {
-  /*display: inline-block;*/
-  max-width: 50%;
-  /*float: left;*/
+  border: 2px solid white;
+ position: absolute;
+ top: 44px;
+ right: 1px;
+ max-width: 48%;
+ margin-left: 2px;
+ margin-right: 12px;
+}
+.right-sidebar h2 {
+  text-align: center;
+}
+.side-stories-title {
+  font-family:
 }

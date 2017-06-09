@@ -24,7 +24,7 @@ function getApi(){
       var article2 = ele;
       var titleUrl = article2.url;
       var title = article2.title;
-      var sideStories = "<a href=' " + titleUrl + "' target='_blank'>"  + "<h3 class='side-stories-title'>" + title + "</h3>"  + "<hr />" + "</a>";
+      var sideStories =   "<p class='side-stories-title'>" +  "<a href=' " + titleUrl + "' target='_blank'>" + title  + "<hr />" + "</a>" + "</p>";
       $(".right-sidebar").append(sideStories);
     })
   });
